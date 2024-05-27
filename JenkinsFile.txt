@@ -1,17 +1,9 @@
 pipeline {
     agent any
-
     stages {
-        stage('Design') {
+        stage('Hello') {
             steps {
-                echo 'Designing Concept Car'
-                echo 'Designing Concept Carrrr'
-            }
-        }
-        
-        stage('Build') {
-            steps {
-                echo 'Building Concept Carrrrr'
+                echo 'Hello World'
             }
         }
     }
