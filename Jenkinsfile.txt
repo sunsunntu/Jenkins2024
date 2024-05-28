@@ -3,34 +3,34 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('C:/Users/user/Desktop/Jenkins/test.bat') {
+                dir('C:/Users/N2607/Documents/Jenkins/Day2/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-            bat 'C:/Users/user/Desktop/Jenkins/test.bat'
+            bat 'C:/Users/N2607/Documents/Jenkins/Day2/test.bat'
             }
         }
         stage('Test') {
             steps {
-                dir('C:/Users/user/Desktop/Jenkins/test.bat') {
+                dir('C:/Users/N2607/Documents/Jenkins/Day2/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/user/Desktop/Jenkins/test.bat'
+                bat 'C:/Users/N2607/Documents/Jenkins/Day2/test.bat'
             }
         }
       stage('Package') {
             steps {
-                dir('C:/Users/user/Desktop/Jenkins/test.bat') {
+                dir('C:/Users/N2607/Documents/Jenkins/Day2/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/user/Desktop/Jenkins/test.bat'
+                bat 'C:/Users/N2607/Documents/Jenkins/Day2/test.bat'
             }
         }
         stage('Deploy') {
             steps {
-                dir('C:/Users/user/Desktop/Jenkins/test.bat') {
+                dir('C:/Users/N2607/Documents/Jenkins/Day2/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/user/Desktop/Jenkins/test.bat'
+                bat 'C:/Users/N2607/Documents/Jenkins/Day2/test.bat'
             }
         }
     }
