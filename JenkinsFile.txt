@@ -1,9 +1,36 @@
 pipeline {
-    agent any
+    agent {label 'Linux_node2'}
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                dir('C:/Users/N2607/Documents/Jenkins/Day2/test.bat') {
+                    /* execute commands in the scripts directory */
+                }
+            bat 'C:/Users/N2607/Documents/Jenkins/Day2/test.bat'
+            }
+        }
+        stage('Test') {
+            steps {
+                dir('C:/Users/N2607/Documents/Jenkins/Day2/test.bat') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/N2607/Documents/Jenkins/Day2/test.bat'
+            }
+        }
+      stage('Package') {
+            steps {
+                dir('C:/Users/N2607/Documents/Jenkins/Day2/test.bat') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/N2607/Documents/Jenkins/Day2/test.bat'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                dir('C:/Users/N2607/Documents/Jenkins/Day2/test.bat') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/N2607/Documents/Jenkins/Day2/test.bat'
             }
         }
     }
